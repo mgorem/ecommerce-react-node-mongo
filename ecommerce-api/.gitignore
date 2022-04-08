@@ -41,3 +41,8 @@ yarn-error.log*
 /.changelog
 .npm/
 dist
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
