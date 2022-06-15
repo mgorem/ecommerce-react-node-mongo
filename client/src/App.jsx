@@ -1,12 +1,10 @@
-import Product from "./pages/Product";
-import Home from "./pages/Home";
-import ProductList from "./pages/ProductList";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import Cart from "./pages/Cart";
 
-const App = () => {
-  return <Home/>;
-};
+function App() {
+  return (
+    <div className="App">
+      <h1>E-Commerce App</h1>
+    </div>
+  );
+}
 
 export default App;
