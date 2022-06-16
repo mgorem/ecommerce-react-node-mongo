@@ -4,6 +4,20 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 
+const Info = styled.div`
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.005);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+`
 const Container = styled.div`
     flex: 1;
     margin: 5px;
@@ -13,6 +27,10 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     background-color: #e7effd;
+    position: relative;
+    &:hover ${Info}{
+        opacity: 1;
+    }
 `
 // const Circle = styled.div`
 //     width: 200px;
@@ -28,13 +46,21 @@ const Image = styled.img`
     border-radius: 50%;
     z-index: 2;
 `
-const Info = styled.div`
-    width: 100%;
-    height: 100%;
-    position: absolute;
-`
 const Icon = styled.div`
-    
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    &:hover{
+        background-color: aliceblue;
+        transform: scale(1.3);
+    }
 `
 
 const Product = ({item}) => {
