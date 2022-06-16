@@ -56,9 +56,11 @@ const Arrow = styled.div`
     height: 50px;
     background-color: #fff7f7;
     border-radius: 50%;
+    /* Positioning */
     display: flex;
     align-items: center;
     justify-content: center;
+    /* The parent(Container) should be relative */
     position: absolute;
     top: 0;
     bottom: 0;
@@ -66,7 +68,7 @@ const Arrow = styled.div`
     left: ${props=> props.direction === "left" && "10px"};
     right: ${props=> props.direction === "right" && "10px"};
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.6;
     z-index: 2;
 `
 
@@ -83,14 +85,16 @@ const Slider = () => {
 
     return(
         <Container>
+            {/* Left Arrow with z-index of 2*/}
             <Arrow direction="left" onClick={()=>handleClick("left")}>
                 <ArrowBackIosOutlinedIcon />
             </Arrow>
+
             <Wrapper slideIndex={slideIndex}>
                 {sliderItems.map((item) => (
-                <Slide bg={item.bg}>
+                <Slide bg={item.bg} key={item.id}>
                 <ImageContainer>
-                    <Image src={item.img} alt="Hero" />
+                    <Image src={item.image} alt="Hero" />
                 </ImageContainer>
                 <InfoContainer>
                     <Title>{item.title}</Title>
@@ -99,8 +103,8 @@ const Slider = () => {
                 </InfoContainer>
                 </Slide>
                 ))}
-                
             </Wrapper>
+            {/* Right Arrow with z-index of 2 */}
             <Arrow direction="right" onClick={()=>handleClick("right")}>
                 <ArrowForwardIosOutlinedIcon />
             </Arrow>
