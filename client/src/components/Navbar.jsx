@@ -51,6 +51,14 @@ const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
     margin-left: 25px;
+    margin-right: 25px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 12px;
+    background-color: #2661cf;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
 `
 const Navbar = () => {
   return (
@@ -68,7 +76,7 @@ const Navbar = () => {
             </Center>
             <Right>
                 <MenuItem>REGISTER</MenuItem>
-                <MenuItem>SIGN IN</MenuItem>
+                <MenuItem>LOGIN</MenuItem>
                 <Badge badgeContent={4} color="primary">
                  <ShoppingCartOutlinedIcon />
                 </Badge>
