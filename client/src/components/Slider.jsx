@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import ArrowBackIosOutlinedIcon from '@mui/icons-material/ArrowBackIosOutlined';
 import { sliderItems } from '../data'
-
+import { mobile } from '../responsive'
 
 const Container = styled.div`
     width: 100%;
@@ -11,6 +11,7 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
+    ${mobile({display: "none"})}
 `
 const Wrapper = styled.div`
     height: 100%;

@@ -7,10 +7,12 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import RoomIcon from '@mui/icons-material/Room';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import { mobile } from '../responsive';
 
 const Container = styled.div`
     display: flex;
     background-color: #66a1fe;
+    ${mobile({flexDirection: "column"})}
 `
 const Left = styled.div`
     flex: 1;
@@ -41,6 +43,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({display: "none"})}
 `
 const Title = styled.h3`
   margin-bottom: 30px;
@@ -58,6 +61,7 @@ const ListItem = styled.li`
 `
 const Right = styled.div`
     flex: 1;
+    margin-left: 20px;
 `
 const ContactItem = styled.div`
     margin-bottom: 20px;
@@ -73,11 +77,10 @@ const Footer = () => {
         <Left>
           <Logo>MG's Fineline</Logo>
           <Desc>
-            MG's Fineline ensures a confident and fashionable style for everyone. 
-            We also update our customers on the latest and most fashionable trends
-            based on their customized products. The beauty about MG's fineline is 
-            lots of discounts and customer surprises. Watch out for to stand a chance 
-            of winning vouchers.
+            MG's Fineline ensures a confident and fashionable style for all. 
+            We update our customers on the latest and most fashionable trends
+            based on customized products. Enjoy lots of discounts. Watch out 
+            vouchers.
           </Desc>
           <SocialContainer>
             <SocialIcon color="e4405f">
