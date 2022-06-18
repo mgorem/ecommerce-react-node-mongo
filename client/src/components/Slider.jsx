@@ -29,9 +29,18 @@ const Slide = styled.div`
 const ImageContainer = styled.div`
     height: 100%;
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 const Image = styled.img`
     height: 80%;
+    /* width: 700px;
+    height: 700px; */
+    border: none;
+    border-radius: 80px;
+    object-fit: cover;
+    /* 1640, 1015, 380 */
 `
 const InfoContainer = styled.div`
     flex: 1;
