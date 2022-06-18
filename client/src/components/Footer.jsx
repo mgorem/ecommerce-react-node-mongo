@@ -112,7 +112,7 @@ const Footer = () => {
           </List>
         </Center>
         <Right>
-          <Title>Contact Us</Title>
+          <Title style={{marginTop: "20px"}}>Contact</Title>
           <ContactItem>
             <RoomIcon style={{marginRight: "10px"}} />
             2656-20100, Nairobi, Kenya
