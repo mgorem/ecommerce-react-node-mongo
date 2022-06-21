@@ -1,3 +1,4 @@
+// cart schema/model to represent how cart data should be saved in mongodb
 const mongoose = require('mongoose')
 
 const cartSchema = new mongoose.Schema(

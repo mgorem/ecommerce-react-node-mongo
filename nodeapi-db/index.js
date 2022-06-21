@@ -5,7 +5,9 @@ const dotenv = require('dotenv')
 const userRoute = require('./routes/user')
 const authRoute = require('./routes/auth')
 
+// to use dotenv file
 dotenv.config()
+
 // use mongoose to connect to mongoDB
 mongoose.connect(
     process.env.MONGO_URL)
@@ -14,7 +16,10 @@ mongoose.connect(
      console.log(err)
  })
 
- app.use(express.json())
+ // get data as json using express function
+app.use(express.json())
+
+// import routes from  routes folder and use '/api/route', routeFileName
 app.use('/api/auth', authRoute)
 app.use('/api/users', userRoute)
 

@@ -1,3 +1,4 @@
+// order schema/model to represent how order data should be saved in mongodb
 const mongoose = require('mongoose')
 
 const orderSchema = new mongoose.Schema(

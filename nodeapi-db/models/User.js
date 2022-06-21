@@ -1,3 +1,4 @@
+// user schema/model to represent how user data should be saved in mongodb
 const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema(

@@ -1,6 +1,6 @@
-const router = require('express').Router()
-const User = require('../models/User')
-const CryptoJS = require('crypto-js')
+const router = require('express').Router() // import express router function
+const User = require('../models/User') // import the userSchema to use it for authentication
+const CryptoJS = require('crypto-js') // import library to hash passwords
 
 // REGISTER
 router.post('/register', async (req, res) => {

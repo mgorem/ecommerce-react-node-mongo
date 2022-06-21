@@ -1,3 +1,4 @@
+// product schema/model to represent how product data should be saved in mongodb
 const mongoose = require('mongoose')
 
 const productSchema = new mongoose.Schema(
