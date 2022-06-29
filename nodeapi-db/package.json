@@ -20,6 +20,6 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.5",
     "nodemon": "^2.0.16",
-    "stripe": "^8.174.0"
+    "stripe": "^9.10.0"
   }
 }
