@@ -7,7 +7,7 @@ const userRoute = require("./routes/user");
 const productRoute = require("./routes/product");
 const cartRoute = require("./routes/cart");
 const orderRoute = require("./routes/order");
-const stripeRoute = require("./routes/stripe");
+// const stripeRoute = require("./routes/stripe");
 const cors = require("cors");
 
 // to use dotenv file
@@ -31,7 +31,7 @@ app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
 app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
-app.use("/api/checkout", stripeRoute);
+// app.use("/api/checkout", stripeRoute);
 
 // listen for any changes on this port
 app.listen(process.env.PORT || 5000, () => {
