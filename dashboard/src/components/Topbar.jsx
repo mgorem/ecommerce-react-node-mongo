@@ -17,8 +17,8 @@ const Topbar = () => {
                 <div className="topBarIconContainer">
                     <NotificationsNone />
                     <span className="topIconBadge">2</span>
-
-                    <div className="topBarIconContainer">
+                </div>    
+                <div className="topBarIconContainer">
                     <Language />
                     <span className="topIconBadge">2</span>
                 </div>
@@ -27,10 +27,9 @@ const Topbar = () => {
                     <Settings />
                     <span className="topIconBadge">2</span>
                 </div>
-                </div>
+            </div>
             </div>
         </div>
-    </div>
   )
 }
 
