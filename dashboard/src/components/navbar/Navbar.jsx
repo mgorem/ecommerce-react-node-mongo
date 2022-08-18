@@ -16,10 +16,33 @@ const Navbar = () => {
           <input type="text" placeholder='Search...' />
           <SearchOutlinedIcon />
         </div>
+
         <div className="items">
           <div className="item">
-            <LanguageOutlinedIcon />
+            <LanguageOutlinedIcon className='icon'/>
             English
+          </div>
+          <div className="item">
+          <DarkModeOutlinedIcon className='icon'/>
+          </div>
+          <div className="item">
+          <FullscreenExitOutlinedIcon className='icon'/>
+          </div>
+          <div className="item">
+          <NotificationsNoneOutlinedIcon className='icon'/>
+          <div className="counter">2</div>
+          </div>
+          <div className="item">
+          <ChatBubbleOutlineOutlinedIcon className='icon'/>
+          <div className="counter">4</div>
+          </div>
+          <div className="item">
+          <ListOutlinedIcon className='icon'/>
+          </div>
+          <div className="item">
+          <img src="./images/oremprofile2.jpg" alt="profile" 
+          className='avatar'
+          />
           </div>
         </div>
       </div>
